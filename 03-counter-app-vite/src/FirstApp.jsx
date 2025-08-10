@@ -3,15 +3,28 @@
 //     return a + b;
 // }
 
-export const FirstApp = () => {
+import PropTypes from 'prop-types';
+
+export const FirstApp = ({title, subtitle}) => {
+
+// if (!title) {
+//     throw new Error("El título no existe");
+// }
+
+    // console.log(props);
     return (
         // <Fragment>
         //<>   es lo mismo que un Fragment
         <> 
             {/* <h1>{ GetName(2,3) }</h1> */}
-            <h1>Sebastián</h1>
-            <p>soy un subtitulo</p>
+            <h1>{title}</h1>
+            <p>{subtitle}</p>
         </>
         // </Fragment>
     );
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.number,
 }
