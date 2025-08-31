@@ -24,8 +24,3 @@ const [ nombre, setNombre ] = usState( 'Goku' );
 
 console.log( nombre );
 setNombre();
-
-
-
-
-
