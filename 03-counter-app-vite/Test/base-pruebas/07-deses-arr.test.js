@@ -9,8 +9,6 @@ describe('pruebas en 07-deses-arr', () => {
         expect(letters).toBe('ABC');
         expect(typeof numbers).toBe('number');
         expect(numbers).toBe(123);
-
-        
         
     });
 
