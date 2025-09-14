@@ -5,7 +5,7 @@
 
 import PropTypes from 'prop-types';
 
-export const FirstApp = ({ title, subtitle,name }) => {
+export const FirstApp = ({ title, subtitle='No hay subtítulo',name='No hay título' }) => {
 
 // if (!title) {
 //     throw new Error("El título no existe");
@@ -30,8 +30,8 @@ FirstApp.propTypes = {
     subtitle: PropTypes.string,
 }
 
-FirstApp.defaultProps = {
-    name: 'Sebastián Beltrán', // Propiedad por defecto,
-    subtitle: 'No hay subtítulo',
-    title: 'No hay título',
-}
+// FirstApp.defaultProps = { deprectado
+//     name: 'Sebastián Beltrán', // Propiedad por defecto,
+//     subtitle: 'No hay subtítulo',
+//     // title: 'No hay título',
+// }
