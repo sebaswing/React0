@@ -17,7 +17,8 @@ export const FirstApp = ({ title, subtitle='No hay subtítulo',name='No hay tít
         //<>   es lo mismo que un Fragment
         <> 
             {/* <h1>{ GetName(2,3) }</h1> */}
-            <h1>{title}</h1>
+            <div data-testid="test-title">{title}</div>
+            <p>{subtitle}</p>
             <p>{subtitle}</p>
             <p>{name}</p>
         </>
