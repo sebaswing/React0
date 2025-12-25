@@ -1,0 +1,2 @@
+// En caso de necesitar la implementación del FetchAPI
+require('whatwg-fetch');//import 'whatwg-fetch'; // <-- yarn add whatwg- (no sirve el import, hay que obligarlo a usar por Jest está leyendo jest.setup.js como CommonJS,pero ahí usaste import, que es de ES Modules.)
