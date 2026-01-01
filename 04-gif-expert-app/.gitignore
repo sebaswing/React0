@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 # Environment variables
 .env
-src\configu
+/src/configu/
