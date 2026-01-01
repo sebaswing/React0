@@ -7,7 +7,7 @@ export const useFetchGifs = (category) => {
     const [isLoading, setIsLoading] = useState(true);
 
     const getImages = async() =>{ //forma 2
-        const newImages = await getGifs(category);
+        const newImages = await getGifs(category,import.meta.env.VITE_API_KEY);
         setImages(newImages);
         setIsLoading(false);
       }
