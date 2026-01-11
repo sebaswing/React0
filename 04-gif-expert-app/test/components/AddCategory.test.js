@@ -36,12 +36,9 @@ describe('Purebas en <AddCategory/>', () => {
     })
     test('no debe llamar onNewCategory si el input esta vacio', () => { // prueba el submit
 
-        const inputValue = '';
         const onNewCategory = jest.fn()
         render(<AddCategory onNewCategory={onNewCategory} />);
-        const input = screen.getByRole('textbox');
         const form = screen.getByRole('form');
-        fireEvent.input(input, {target: {value: inputValue}});
         fireEvent.submit(form);
         expect(onNewCategory).toHaveBeenCalledTimes(0);
         
