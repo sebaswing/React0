@@ -12,6 +12,7 @@ export const AddCategory = ({onNewCategory}) => {
 
     const onSubmit = (event) => {
         // console.log(event);
+        // console.log('--->Submit hecho!!!');// ejemplo para saber si del test se llama el submit  
         event.preventDefault();
         if(inputValue.trim().length <=1) return;
         // console.log(inputValue);
@@ -22,7 +23,7 @@ export const AddCategory = ({onNewCategory}) => {
 
     return (
 
-        <form onSubmit={(event)=>onSubmit(event)}>
+        <form onSubmit={(event)=>onSubmit(event)} aria-label="form">
             <input 
                 type="text" 
                 placeholder="Buscar gifs" 
