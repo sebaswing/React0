@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const AddCategory = ({onNewCategory}) => {
 
-    const[inputValue,setInputValue]=useState ('');
+    const[inputValue,setInputValue]=useState ('');//estado local del componente si se quiere poner un valor por defecto se pone entre los parentesis
 
     const onInputChange = ({target}) => {
         // console.log(target.value);
