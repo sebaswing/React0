@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 export const GifGrid = ({category}) => {
 
   const {images, isLoading}= useFetchGifs (category);
-  console.log({ isLoading});
+  // console.log({ isLoading});// para ver el estado de carga
 
   return (
    <>
